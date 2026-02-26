@@ -26,7 +26,7 @@ The oscillation period is defined by two resistors and one capacitor, allowing e
 | Timer IC | NE555P |
 | Supply Voltage | 5–12 V DC |
 | Oscillator Mode | Astable |
-| Timing Components | R1, R2, C |
+| Timing Components | R1, R2, C1 |
 | Output Type | Digital square wave |
 | PCB Type | Single-layer through-hole |
 
@@ -37,16 +37,18 @@ The oscillation period is defined by two resistors and one capacitor, allowing e
 | Reference | Component | Suggested Value / Part |
 |-----------|-----------|------------------------|
 | U1 | Timer IC | NE555P (DIP-8) |
-| R1 | Resistor | 1 kΩ to 100 kΩ |
-| R2 | Resistor | 1 kΩ to 1 MΩ |
-| C1 | Timing Capacitor | 100 nF to 1000 µF |
-| C2 | Decoupling Capacitor | 100 nF (ceramic, near U1 VCC-GND) |
-| D1 (optional) | Indicator LED | 3 mm or 5 mm |
-| R3 (if D1 used) | LED Current Limiting Resistor | 220 Ω to 1 kΩ |
-| J1 | Power Connector | 2-pin terminal (5–12 V DC) |
-| J2 | Output Connector | 2-pin terminal / header |
+| R1 | Resistor | 3.3 kΩ |
+| R2 | Resistor | 68 kΩ |
+| C1 | Timing Capacitor (electrolytic) | 22 µF |
+| C2 | Control/Noise Filter Capacitor | 10 nF (pin 5 to GND) |
+| D1 | LED | Red LED (1.6 V / 20 mA) |
+| R3 | Resistor | 100 Ω |
+| R4 | Resistor | 47 Ω |
+| D2 | Protection Diode | 1 A max (series input protection) |
+| SW1 | Push Button Switch | SPST momentary |
+| BT1 | Battery / DC Source | Project supply source |
 
-> Note: R1, R2 and C1 define the oscillation frequency and duty cycle. Choose values according to the target timing.
+> Note: R1, R2 and C1 define the oscillation frequency and duty cycle.
 
 ---
 
