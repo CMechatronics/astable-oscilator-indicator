@@ -53,13 +53,23 @@ The oscillation period is defined by two resistors and one capacitor, allowing e
 ## Timing Equations (Astable Mode)
 
 $$
-\begin{aligned}
-T_{\text{high}} &= 0.693\,(R_1 + R_2)\,C \\
-T_{\text{low}}  &= 0.693\,R_2\,C \\
-T               &= T_{\text{high}} + T_{\text{low}} \\
-f               &= \frac{1}{T} \\
-D               &= \frac{R_1 + R_2}{R_1 + 2R_2}
-\end{aligned}
+\Large T_{\text{high}} = 0.693\,(R_1 + R_2)\,C
+$$
+
+$$
+\Large T_{\text{low}} = 0.693\,R_2\,C
+$$
+
+$$
+\Large T = T_{\text{high}} + T_{\text{low}}
+$$
+
+$$
+\Large f = \frac{1}{T}
+$$
+
+$$
+\Large D = \frac{R_1 + R_2}{R_1 + 2R_2}
 $$
 
 Where:
