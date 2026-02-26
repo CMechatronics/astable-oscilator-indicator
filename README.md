@@ -34,15 +34,35 @@ The oscillation period is defined by two resistors and one capacitor, allowing e
 
 ## Timing Equations (Astable Mode)
 
-T_high = 0.693 (R1 + R2) C  
-T_low  = 0.693 (R2) C  
+High time:
 
-T = T_high + T_low  
-f = 1 / T  
+$$
+T_{high} = 0.693 (R_1 + R_2) C
+$$
 
-Duty Cycle = (R1 + R2) / (R1 + 2R2)
+Low time:
 
-Adjust R1, R2 and C to obtain the desired period.
+$$
+T_{low} = 0.693 (R_2) C
+$$
+
+Total period:
+
+$$
+T = T_{high} + T_{low}
+$$
+
+Frequency:
+
+$$
+f = \frac{1}{T}
+$$
+
+Duty Cycle:
+
+$$
+D = \frac{R_1 + R_2}{R_1 + 2R_2}
+$$
 
 ---
 
