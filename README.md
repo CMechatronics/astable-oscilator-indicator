@@ -26,7 +26,7 @@ The oscillation period is defined by two resistors and one capacitor, allowing e
 | Timer IC | NE555P |
 | Supply Voltage | 5–12 V DC |
 | Oscillator Mode | Astable |
-| Timing Components | R1, R2, C1 |
+| Timing Components | R1, R2, C1 (user-selectable) |
 | Output Type | Digital square wave |
 | PCB Type | Single-layer through-hole |
 
@@ -37,9 +37,9 @@ The oscillation period is defined by two resistors and one capacitor, allowing e
 | Reference | Component | Suggested Value / Part |
 |-----------|-----------|------------------------|
 | U1 | Timer IC | NE555P (DIP-8) |
-| R1 | Resistor | 3.3 kΩ |
-| R2 | Resistor | 68 kΩ |
-| C1 | Timing Capacitor (electrolytic) | 22 µF |
+| R1 | Timing Resistor | User-defined (example: 3.3 kΩ) |
+| R2 | Timing Resistor | User-defined (example: 68 kΩ) |
+| C1 | Timing Capacitor (electrolytic) | User-defined (example: 22 µF) |
 | C2 | Control/Noise Filter Capacitor | 10 nF (pin 5 to GND) |
 | D1 | LED | Red LED (1.6 V / 20 mA) |
 | R3 | Resistor | 100 Ω |
@@ -48,7 +48,7 @@ The oscillation period is defined by two resistors and one capacitor, allowing e
 | SW1 | Push Button Switch | SPST momentary |
 | BT1 | Battery / DC Source | Project supply source |
 
-> Note: R1, R2 and C1 define the oscillation frequency and duty cycle.
+> Note: R1, R2 and C1 define the oscillation frequency and duty cycle, so they are intentionally left as user-selectable values.
 
 ---
 
