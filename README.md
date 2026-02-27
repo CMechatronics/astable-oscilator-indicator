@@ -54,33 +54,43 @@ The oscillation period is defined by two resistors and one capacitor, allowing e
 
 ## Timing Equations (Astable Mode)
 
+LaTeX view (desktop):
+
 $$
-\Large T_{\text{high}} = 0.693\,(R_1 + R_2)\,C
+T_{high} = 0.693 (R_1 + R_2) C_1
 $$
 
 $$
-\Large T_{\text{low}} = 0.693\,R_2\,C
+T_{low} = 0.693 R_2 C_1
 $$
 
 $$
-\Large T = T_{\text{high}} + T_{\text{low}}
+T = T_{high} + T_{low}
 $$
 
 $$
-\Large f = \frac{1}{T}
+f = \frac{1}{T}
 $$
 
 $$
-\Large D = \frac{R_1 + R_2}{R_1 + 2R_2}
+D = \frac{R_1 + R_2}{R_1 + 2R_2}
 $$
+
+Fallback (mobile-friendly):
+
+- Thigh = 0.693 * (R1 + R2) * C1
+- Tlow  = 0.693 * R2 * C1
+- T     = Thigh + Tlow
+- f     = 1 / T
+- D     = (R1 + R2) / (R1 + 2 * R2)
 
 Where:
 
-- $T_{\text{high}}$: output HIGH duration (s)
-- $T_{\text{low}}$: output LOW duration (s)
-- $T$: period (s)
-- $f$: frequency (Hz)
-- $D$: duty cycle (0 to 1)
+- Thigh: output HIGH duration (s)
+- Tlow: output LOW duration (s)
+- T: period (s)
+- f: frequency (Hz)
+- D: duty cycle (0 to 1)
 
 Detailed derivation and worked example: [calculations/timing_equations.md](calculations/timing_equations.md)
 
